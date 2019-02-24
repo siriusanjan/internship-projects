@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".SeekBarActivity">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    >
+
+  <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:padding="0dp"
+            android:layout_width="0dp"
+            android:background="#ffff"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:scaleType="fitCenter"
+        android:padding="0dp"
+        android:src="@drawable/forest"
+        android:id="@+id/imageview_container"
+        android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="0dp"
+            android:background="#ffff"
+            android:padding="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="4">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffff"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/horizontal_line_first"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/horizontal_line"/>
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dp"
+        android:id="@+id/horizontal_line_second"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/horizontal_line"/>
+</RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <android.support.v7.widget.CardView
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <SeekBar
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekbar_zoom_seekbar"
+                />
+        </android.support.v7.widget.CardView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_create_bitmap"
+        android:text="Bitmap"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_chop"
+        android:text="chop"/>
+</LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageview_result_container"
+            android:layout_width="match_parent"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_background"/>
+    </LinearLayout>
+
+</LinearLayout>

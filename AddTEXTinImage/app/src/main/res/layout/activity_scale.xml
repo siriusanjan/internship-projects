@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScaleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4"
+        android:layout_height="match_parent">
+
+        <com.example.homay.addtextinimage.ScaledView
+            android:id="@+id/customScaledView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_select_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IMAGE"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Text"
+                android:id="@+id/button_add_text"
+                android:layout_toRightOf="@id/button_select_image"
+                />
+
+            <ToggleButton
+                android:layout_alignParentRight="true"
+                android:id="@+id/toggle_scale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_below="@id/button_select_image"
+                android:text="Log"
+                android:id="@+id/text_view_log"
+                android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Message"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/text_view_log"
+                android:layout_below="@id/button_select_image"
+                android:id="@+id/text_view_message"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text_mytext"
+
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

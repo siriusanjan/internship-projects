@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4">
+
+        <ImageView
+
+            android:id="@+id/imageview_zoom_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3b38f7"
+            android:scaleType="matrix"
+            android:src="@drawable/forest" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <SeekBar
+            android:id="@+id/seekbar_zoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+
+        <Button
+            android:id="@+id/button_zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="zum" />
+
+        <Button
+            android:id="@+id/button_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rotate" />
+    </LinearLayout>
+</LinearLayout>
